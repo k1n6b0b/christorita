@@ -1,0 +1,331 @@
+@charset "UTF-8";
+/* CSS Document */
+
+a {
+	text-decoration: none;
+	color: #35456a;
+}
+
+body {
+	background-image: url("/img/airmailbg.png");
+	background-position: left top;
+    background-repeat: repeat-x;
+	}
+	
+img {
+	max-width: 100%;
+	}
+
+img.soon {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*****************
+NAVIGATION TOOLBAR
+******************/
+
+header {
+	position:relative;
+    display:block;
+    max-width:940px;
+    height:100%;
+    margin:0 auto;
+	padding: 60px 10px 0px 10px;
+	}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+	font-family: 'Special Elite', sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 0;
+	margin-top: 15px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	vertical-align: middle;
+	}
+
+nav a {
+	color: #000000;
+}	
+	
+.logo {
+	width: 180px;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	}
+
+nav li {
+	position: relative;
+	display: inline-block;
+	list-style-type: none;
+	}
+	
+nav a {
+	position: relative;
+	display: block;
+	padding: 10px;
+	}
+	
+nav a:hover {
+  color: #818181;
+}
+
+
+/*****************
+CAROUSEL
+******************/
+
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }
+
+/*****************
+PAGE: INDEX
+******************/
+
+.wedding-title {
+	margin-top: 20px;
+	padding: 5px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14pt;
+	text-align: center;
+	} 
+  
+/*****************
+PAGE: WEDDING
+******************/
+
+.wedding {
+	margin-top: 20px;
+	padding: 5px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14pt;
+	} 
+	
+.wedding-date {
+	font-family: 'Special Elite', sans-serif;
+	font-size: 16pt;
+	} 
+	
+.parking {
+	margin-top: 20px;
+	padding: 5px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12pt;
+	} 
+	
+.parking-map {
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	max-width: 600px;
+	}
+  
+/*****************
+PAGE: STORY 
+******************/
+
+.our-story {
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	max-width: 720px;
+	}
+
+.story {
+	margin-top: 20px;
+	padding: 5px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12pt;
+	}
+
+/*****************
+PAGE: IMAGE GALLERY 
+******************/
+
+#wrapper {
+  max-width: 100%;
+  margin: auto;
+  padding: 0;}
+#gallery {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#gallery li {
+	float: left;
+	list-style-type: none;
+	width: 45%;
+	height: 45vw;
+	margin: 2.5%;
+}
+
+#gallery img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	}
+	
+	
+/*****************
+PAGE: ACCOMODATION 
+******************/
+
+.hotelmap {
+	text-align: center;
+	padding: 0 5%;
+	margin-top: 20px;
+	}
+.map {
+	width: 100%;
+	max-width: 940px;
+	height: 60vw;
+	}
+	
+/*****************
+PAGE: REGISTRY 
+******************/
+
+.reginfo {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14pt;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	}
+	.registry-imgs {
+		margin: 0 auto;
+		width: 100%;
+		max-width: 282px;
+		}
+.registry {
+	display:block;
+	position: relative;
+	text-indent: -9999px;
+	width: 282px;
+	height: 100px;
+	float:right;
+	margin-right:20px;
+	margin-left:20px;
+}
+.registry span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #FFFfff;
+	background: url(/img/zola.png) no-repeat;
+	background-position: 0 -100px;
+	opacity: 0;
+	filter:alpha(opacity=0);
+	-webkit-transition: opacity 0.5s;
+	-moz-transition:    opacity 0.5s;
+	-o-transition:      opacity 0.5s;
+	-ms-transition:     opacity 0.5s;
+}
+.registry:hover span {
+	opacity: 1;
+	filter:alpha(opacity=100);
+}
+.macys{
+	background: url(/img/macys.png) no-repeat;
+}
+.macys span{
+	background: url(/img/macys.png) no-repeat;
+	background-position: 0 -100px;
+}
+.zola{
+	background: url(/img/zola.png) no-repeat;
+}
+.zola span{
+	background: url(/img/zola.png) no-repeat;
+	background-position: 0 -100px;
+}
+.crate{
+	background: url(/img/crate.png) no-repeat;
+}
+.crate span{
+	background: url(/img/crate.png) no-repeat;
+	background-position: 0 -100px;
+}
+
+@media screen and (min-width: 480px) {
+	
+	
+/*****************
+PAGE: IMAGE GALLERY 
+******************/
+#gallery li {
+	width: 28.3333%;
+	height: 28.3333vw;
+	}
+	}
+	
+
+	
+@media screen and (min-width: 1024px) {
+	
+	
+/*****************
+NAVIGATION TOOLBAR
+******************/
+nav {
+	float: right;
+	font-size: 18px;
+	}
+	
+.logo {
+	float: left;
+	}
+	
+/*****************
+PAGE: ACCOMODATION 
+******************/
+
+.map {
+	width: 100%;
+	height: 500px;
+	}
+	
+
+/*****************
+PAGE: IMAGE GALLERY 
+******************/
+#wrapper {
+  max-width: 940px;
+  margin: auto;
+  padding: 0;
+  }
+  
+#gallery li {
+	width: 28.3333%;
+	height: 266.333px;
+	}
+	}
+	
+	
+	
+	
